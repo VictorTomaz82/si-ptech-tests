@@ -13,3 +13,19 @@ describe('[CHECK TITLE]', () => {
 
     //TODO
 });
+
+//NEW TEST FP
+describe('[CHECK MENU LINKS]', () => {
+	
+	it('should check if the menu links are working', () => {
+		
+		HomePage.open();
+		
+		var menuLinks = $$('#responsive-menu a');
+		
+		menuLinks.forEach(function (link) {
+			link.click();
+		});
+		
+	});
+});
